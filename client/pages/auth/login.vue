@@ -5,8 +5,12 @@
                 <span class="text-red-200 italic">{{ errors }}</span>
             </div>
             <div class="flex flex-col mt-3">
-                <label for="email" class="text-white text-xl">Email</label>
-                <input type="email" v-model="form.email" class="px-2 py-1 rounded" placeholder="Email">
+                <label for="email" class="text-white text-xl">Comapany ID</label>
+                <input type="text" v-model="form.username" class="px-2 py-1 rounded" placeholder="Company ID">
+            </div>
+            <div class="flex flex-col mt-3">
+                <label for="email" class="text-white text-xl">Username</label>
+                <input type="text" v-model="form.email" class="px-2 py-1 rounded" placeholder="Username/mobile/email">
             </div>
             <div class="flex flex-col mt-3">
                 <label for="password" class="text-white text-xl">Password</label>

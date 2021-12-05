@@ -24,6 +24,7 @@ class CreateNewUser implements CreatesNewUsers
      */
     public function create(array $input)
     {
+        /*
         $db = trim($input['username']);
         Artisan::call('config:clear');
 Artisan::call('config:cache');
@@ -69,6 +70,7 @@ try {
         Config::set('database.connections.' . env("DB_CONNECTION") .'.database', $oldDbName );
     }
         Artisan::call('migrate');
+        */
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
             'username' => ['required', 'string', 'max:255'],
